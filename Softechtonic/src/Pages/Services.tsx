@@ -1,10 +1,37 @@
 import { motion } from "framer-motion";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading, HStack, Stack, Text } from "@chakra-ui/react";
 
 const Services = () => {
     
     return(
         <>
+        <Grid templateColumns='repeat(3, 1fr)' >
+        <div className="services-G">
+        <HStack gap={30} >
+        <div className="serviceHeadNum">
+            01
+        </div>
+        <div className="serviceHead">Digital Marketing</div>
+        </HStack>
+        <HStack gap={30}>
+        <div className="serviceHeadNum">
+            01
+        </div>
+        <div className="serviceHead">Digital Marketing</div>
+        </HStack>
+        <HStack gap={30}>
+        <div className="serviceHeadNum">
+            01
+        </div>
+        <div className="serviceHead">Digital Marketing</div>
+        </HStack>
+        <HStack gap={30}>
+        <div className="serviceHeadNum">
+            01
+        </div>
+        <div className="serviceHead">Digital Marketing</div>
+        </HStack>
+        </div>
          <div className="ServicesPage">
             
          <motion.div whileHover={{ rotate: 33, transformOrigin:"110px 110px", transition: { duration: 0.9 } }}>
@@ -33,9 +60,10 @@ const Services = () => {
             }} />
             </svg>
             </Box>
-        <Text fontSize={"xx-large"} textColor="black" position={"static"} marginTop={-130} marginLeft={90}>Services</Text>
+        <Text fontSize={"xx-large"} textColor="black" position={"sticky"} marginTop={-130} marginLeft={90}>Services</Text>
         
         </div>
+        </Grid>
         </>
     );
 };
